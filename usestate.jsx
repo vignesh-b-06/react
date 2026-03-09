@@ -1,0 +1,20 @@
+import React, { useState } from "react";
+
+function TextPreview() {
+  const [text, setText] = useState("");
+
+  return (
+    <div>
+      <input
+        type="text"
+        placeholder="Type here..."
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
+
+      <p>Preview: {text}</p>
+    </div>
+  );
+}
+
+export default TextPreview;
