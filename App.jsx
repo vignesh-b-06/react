@@ -33,6 +33,29 @@
 // }
 
 // export default App
+// import Layout from "./Layout";
+// import Button from "./Button";
+// import UserCard from "./UserCard";
+
+// function App() {
+
+//   const handleClick = () => {
+//     alert("Button clicked!");
+//   };
+
+//   return (
+//     <Layout>
+//       <h2>Welcome to the User Page</h2>
+
+//       <UserCard name="Vignesh" age="21" />
+//       <UserCard name="Rahul" age="22" />
+
+//       <Button label="Click Me" onClick={handleClick} />
+//     </Layout>
+//   );
+// }
+
+// export default App;
 import Layout from "./Layout";
 import Button from "./Button";
 import UserCard from "./UserCard";
