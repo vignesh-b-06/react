@@ -32,49 +32,23 @@
 //   )
 // }
 
-// export default App
-// import Layout from "./Layout";
-// import Button from "./Button";
-// import UserCard from "./UserCard";
-
-// function App() {
-
-//   const handleClick = () => {
-//     alert("Button clicked!");
-//   };
-
-//   return (
-//     <Layout>
-//       <h2>Welcome to the User Page</h2>
-
-//       <UserCard name="Vignesh" age="21" />
-//       <UserCard name="Rahul" age="22" />
-
-//       <Button label="Click Me" onClick={handleClick} />
-//     </Layout>
-//   );
-// }
-
-// export default App;
-import Layout from "./Layout";
-import Button from "./Button";
-import UserCard from "./UserCard";
-
 function App() {
 
-  const handleClick = () => {
-    alert("Button clicked!");
-  };
+  const products = [
+    { id: 1, name: "Laptop" },
+    { id: 2, name: "Phone" },
+    { id: 3, name: "Headphones" }
+  ];
 
   return (
-    <Layout>
-      <h2>Welcome to the User Page</h2>
+    <div>
+      <h2>Products</h2>
 
-      <UserCard name="Vignesh" age="21" />
-      <UserCard name="Rahul" age="22" />
+      {products.map(product => (
+        <p key={product.id}>{product.name}</p>
+      ))}
 
-      <Button label="Click Me" onClick={handleClick} />
-    </Layout>
+    </div>
   );
 }
 
